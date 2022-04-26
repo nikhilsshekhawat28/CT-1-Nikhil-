@@ -1,5 +1,3 @@
-#include<stdio.h>
-
 int main()
 
 {
@@ -12,12 +10,18 @@ int main()
 
  int multi = a*b;
 
- int divi = a/b
+ int divi = a/b;
 
 
  if(sum>100 && sub>100 && multi>100 && divi>100)
 {
    printf("You are Good to go !");
+
+}
+
+else if(sum>100 || sub>100 || multi>100 || divi>100)
+{
+  printf("You are halfway right.");
 }
 
 else
