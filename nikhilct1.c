@@ -1,35 +1,35 @@
+#include<stdio.h>
+
 int main()
-
 {
- int a,b;
+
+  int a=5 , b=10;
+  int ID;
+
  
- scanf("%d %d",&a, &b); 
- int sum = a+b;
+  printf("Case-1 will perform: Arithemetic Operators\n ");
+  printf("Case-2 will perform: Relational Operators\n ");
+  printf("Case-3 will perform: Logical Operators\n ");
+  printf("Case-4 will perform: Bitwise Operators\n ");
+  printf("Case-5 will perform: Increment/Decrement Operators\n ");
+  printf("Case-6 will perform: Assignment Operators\n ");
+  
+  printf("Please enter the ID:\n ");
+  scanf("%d", &ID);
 
- int sub = a-b;
+  switch(ID){
 
- int multi = a*b;
+  case 1 : printf("%d %d %d %d",a+b, a-b, a*b, a/b);break;
+  case 2 : printf("%d %d %d %d %d %d",a<b, a>b, a<=b, a>=b,a==b,a!=b);break;
+  case 3 : printf("%d %d %d",a&&b, a||b, a=!b);break;
+  case 4 : printf("%d %d %d %d",a&b, a|b, a<<b, a>>b);break;
+  case 5 : printf("%d %d %d %d",a++, a--, b++, b--);break;
+  case 6 : printf("%d %d",a=20, a+=20);break;
+   
 
- int divi = a/b;
-
-
- if(sum>100 && sub>100 && multi>100 && divi>100)
-{
-   printf("You are Good to go !");
-
-}
-
-else if(sum>100 || sub>100 || multi>100 || divi>100)
-{
-  printf("You are halfway right.");
-}
-
-else
-{
-  printf("Uff!! Better luck next time.");
-}
+  }
 
 
-return 0;
 
-}
+  return 0;
+  }
