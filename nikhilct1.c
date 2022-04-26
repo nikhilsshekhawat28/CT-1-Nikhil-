@@ -3,7 +3,10 @@
 int main()
 {
 
-  int a=5 , b=10;
+  int a, b;
+
+  printf("Enter any value for a and b:\n ");
+  scanf("%d %d", &a, &b);
   int ID;
 
  
@@ -14,7 +17,7 @@ int main()
   printf("Case-5 will perform: Increment/Decrement Operators\n ");
   printf("Case-6 will perform: Assignment Operators\n ");
   
-  printf("Please enter the ID:\n ");
+  printf("\nPlease enter the ID:\n ");
   scanf("%d", &ID);
 
   switch(ID){
